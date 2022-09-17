@@ -15,7 +15,7 @@ export const DividerTitle = styled.p`
 
 function SectionDivider({ title }: SectionDividerType) {
   return (
-    <Box mt={6}>
+    <Box mt={6} mb={3}>
       <DividerTitle>{title}</DividerTitle>
     </Box>
   );

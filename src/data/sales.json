@@ -2,102 +2,129 @@
         "type": "influencers",
         "title": "Lorem Ipsum",
         "price": "606.56",
-        "picture": "/public/static/images/avatars/Image-2.png"
+        "picture": "/public/static/images/avatars/Image-2.png",
+        "color": ""
+
     },
     {
         "type": "influencers",
         "title": "Lorem Ipsum",
         "price": "62.82",
-        "picture": "/public/static/images/avatars/Image-1.png"
+        "picture": "/public/static/images/avatars/Image-1.png",
+        "color": ""
+
     },
     {
         "type": "influencers",
         "title": "Lorem Ipsum",
         "price": "54.96",
-        "picture": "/public/static/images/avatars/Image-3.png"
+        "picture": "/public/static/images/avatars/Image-3.png",
+        "color": ""
+
     },
     {
         "type": "influencers",
         "title": "Lorem Ipsum",
         "price": "40.46",
-        "picture": "/public/static/images/avatars/Image-4.png"
+        "picture": "/public/static/images/avatars/Image-4.png",
+        "color": ""
+
     },
     {
         "type": "influencers",
         "title": "Lorem Ipsum",
         "price": "36.40",
-        "picture": "/public/static/images/avatars/Image-5.png"
+        "picture": "/public/static/images/avatars/Image-5.png",
+        "color": ""
+
     },
     {
         "type": "product",
         "title": "Mac",
         "price": "22.66",
-        "picture": "/public/static/images/products/01.png"
+        "picture": "/public/static/images/products/01.png",
+        "color": ""
+
     },
     {
         "type": "product",
         "title": "Sephora",
         "price": "17.61",
-        "picture": "/public/static/images/products/Photo-3.png"
+        "picture": "/public/static/images/products/Photo-3.png",
+        "color": ""
+
     },
     {
         "type": "product",
         "title": "Samsung",
         "price": "14.11",
-        "picture": "/public/static/images/products/Photo.png"
+        "picture": "/public/static/images/products/Photo.png",
+        "color": ""
+
     },
     {
         "type": "product",
         "title": "Nike Joyride",
         "price": "12.23",
-        "picture": "/public/static/images/products/01.png"
+        "picture": "/public/static/images/products/01.png",
+        "color": ""
+
     },
     {
         "type": "product",
         "title": "Lorem Ipsum",
         "price": "10.70",
-        "picture": "/public/static/images/products/Photo.png"
+        "picture": "/public/static/images/products/Photo.png",
+        "color": ""
+
     },
     {
         "type": "country",
         "title": "France",
         "price": "1284.03",
+        "picture": "",
         "color": "black"
     },
     {
         "type": "country",
         "title": "Belgique",
         "price": "9.30",
+        "picture": "",
         "color": "green"
     },
     {
         "type": "country",
         "title": "Switzerland",
         "price": "4.80",
+        "picture": "",
         "color": "red"
     },
     {
         "type": "country",
         "title": "Tunisia",
         "price": "2.47",
+        "picture": "",
         "color": "yellow"
     },
     {
         "type": "country",
         "title": "United Kingdom",
         "price": "2.30",
+        "picture": "",
         "color": "blue"
     },
     {
         "type": "gifting & paid Campaigns",
         "title": "Gifting campaigns",
         "price": "1501.94",
+        "picture": "",
         "color": "black"
     },
     {
         "type": "gifting & paid Campaigns",
         "title": "Paid campaigns",
         "price": "9.30",
+        "picture": "",
         "color": "green"
     }
 ]

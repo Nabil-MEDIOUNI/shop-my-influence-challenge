@@ -1,3 +1,5 @@
+import { Dispatch } from 'react';
+
 import {
   FAIL_INSIGHTS,
   GET_INSIGHTS,
@@ -5,15 +7,7 @@ import {
 } from '../constants/insights';
 
 import insights from '../../data/insights.json';
-import { Dispatch } from 'react';
-
-type InsightType = {
-  id: number;
-  title: string;
-  description: string;
-  picture: string;
-  background: string;
-};
+import { InsightType } from '../../interfaces';
 
 interface InsightLoadType {
   type: typeof LOAD_INSIGHTS;
