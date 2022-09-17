@@ -34,6 +34,7 @@ export const SideBarItems = styled.div`
     justify-content: center;
   }
 `;
+
 export const SideBarSingleItem = styled.div<{ active: boolean }>`
   display: flex;
   align-items: center;

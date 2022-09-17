@@ -57,6 +57,7 @@ export const SummaryTitle = styled.p`
   color: #032958;
   @media (max-width: 920px) {
     margin-bottom: 16px;
+    font-size: 16px;
   }
 `;
 
