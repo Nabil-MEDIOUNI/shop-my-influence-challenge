@@ -1,8 +1,12 @@
+import { Box } from '@material-ui/core';
+
+import SideBar from './components/SideBar';
+
 function App() {
   return (
-    <>
-      <p>hello world!</p>
-    </>
+    <Box>
+      <SideBar />
+    </Box>
   );
 }
 

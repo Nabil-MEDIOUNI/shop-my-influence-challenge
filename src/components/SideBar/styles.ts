@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SideBarContainer = styled.div<{ show: boolean }>`
-  width: 100px;
+  width: 85px;
   height: 100%;
   background-color: white;
   position: fixed;
@@ -12,7 +12,8 @@ export const SideBarContainer = styled.div<{ show: boolean }>`
   align-items: center;
   box-shadow: 0px 0px 10px #d8d8d8;
   @media (max-width: 920px) {
-    display: none;
+    width: 100%;
+    left: ${(props) => (props.show ? 0 : '-200%')};
   }
 `;
 
@@ -33,6 +34,13 @@ export const SideBarSingleItem = styled.div<{ active: boolean }>`
 `;
 
 export const SideBarLogo = styled.img`
+  margin-top: 24px;
+  cursor: pointer;
+  @media (max-width: 920px) {
+  }
+`;
+
+export const OpenSideBarLogo = styled.img`
   margin-top: 24px;
   cursor: pointer;
   @media (max-width: 920px) {

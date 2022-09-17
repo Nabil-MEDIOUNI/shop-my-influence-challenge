@@ -7,6 +7,7 @@ import {
   SideBarSingleItem,
   SideBarLogo,
   SideBarIcon,
+  OpenSideBarLogo,
 } from './styles';
 
 function SideBar() {
@@ -26,27 +27,33 @@ function SideBar() {
   const [activeIcon, setActiveIcon] = useState('home.png');
 
   return (
-    <SideBarContainer show={showSidebar}>
-      <SideBarLogo
-        src="/static/images/logo-smi-insights.png"
-        onClick={() => setShowSidebar(false)}
-      />
-      <Box mt={6}>
-        {ALL_SIDEBAR_ICONS.map((img) => (
-          <SideBarSingleItem
-            key={img}
-            onClick={() => setActiveIcon(img)}
-            active={activeIcon === img}
-          >
-            <SideBarIcon
-              src={`/static/images/slide-menu-icons/${img}`}
+    <>
+      <SideBarContainer show={showSidebar}>
+        <SideBarLogo
+          src="/static/images/logo-smi-insights.png"
+          onClick={() => setShowSidebar(false)}
+        />
+        <Box mt={6}>
+          {ALL_SIDEBAR_ICONS.map((img) => (
+            <SideBarSingleItem
+              key={img}
+              onClick={() => setActiveIcon(img)}
               active={activeIcon === img}
-              img={img}
-            />
-          </SideBarSingleItem>
-        ))}
-      </Box>
-    </SideBarContainer>
+            >
+              <SideBarIcon
+                src={`/static/images/slide-menu-icons/${img}`}
+                active={activeIcon === img}
+                img={img}
+              />
+            </SideBarSingleItem>
+          ))}
+        </Box>
+      </SideBarContainer>
+      <OpenSideBarLogo
+        src="/static/images/logo-smi-insights.png"
+        onClick={() => setShowSidebar(true)}
+      />
+    </>
   );
 }
 
