@@ -35,6 +35,7 @@ function SideBar() {
         <SideBarLogo
           src="/static/images/logo-smi-insights.png"
           onClick={() => handleSidebar(false)}
+          alt="logo"
         />
         <SideBarItems>
           {ALL_SIDEBAR_ICONS.map((image) => (
@@ -47,6 +48,7 @@ function SideBar() {
                 src={`/static/images/slide-menu-icons/${image}`}
                 active={activeIcon === image}
                 image={image}
+                alt="menu"
               />
             </SideBarSingleItem>
           ))}
@@ -55,6 +57,7 @@ function SideBar() {
       <OpenSideBarLogo
         src="/static/images/logo-smi-insights.png"
         onClick={() => handleSidebar(true)}
+        alt="logo"
       />
     </>
   );
