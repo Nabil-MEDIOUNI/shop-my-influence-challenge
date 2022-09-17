@@ -1,0 +1,36 @@
+[{
+        "id": 1,
+        "title": "Sales",
+        "price": "1M €",
+        "picture": "/static/images/cards-icons/shopping-bag.png",
+        "background": "red"
+    },
+    {
+        "id": 2,
+        "title": "Transactions",
+        "price": "31K",
+        "picture": "/static/images/cards-icons/credit-card.png",
+        "background": "gray"
+    },
+    {
+        "id": 3,
+        "title": "Panier moyen",
+        "price": "43€",
+        "picture": "/static/images/cards-icons/shopping-bag.png",
+        "background": "yellow"
+    },
+    {
+        "id": 4,
+        "title": "Number of shares",
+        "price": "689",
+        "picture": "/static/images/cards-icons/share-2.png",
+        "background": "green"
+    },
+    {
+        "id": 5,
+        "title": "Number of clicks",
+        "price": "31K",
+        "picture": "/static/images/cards-icons/navigation.png",
+        "background": "red"
+    }
+]

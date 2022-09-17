@@ -1,0 +1,10 @@
+body {
+  background-color: #F8F8F8;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 920px) {
+  
+}

@@ -1,0 +1,3 @@
+export const LOAD_INSIGHTS = 'LOAD_INSIGHTS';
+export const FAIL_INSIGHTS = 'FAIL_INSIGHTS';
+export const GET_INSIGHTS = 'GET_INSIGHTS';

@@ -1,0 +1,43 @@
+[{
+        "id": 1,
+        "title": "Mobile",
+        "description": "Most used device",
+        "picture": "/public/static/images/cards-icons/smartphone.png",
+        "background": "red"
+    },
+    {
+        "id": 2,
+        "title": "Black",
+        "description": "Most popular color",
+        "picture": "/public/static/images/cards-icons/target.png",
+        "background": "red"
+    },
+    {
+        "id": 3,
+        "title": "Baskets",
+        "description": "Most popular subcat..",
+        "picture": "/public/static/images/cards-icons/award.png",
+        "background": "green"
+    },
+    {
+        "id": 4,
+        "title": "Monday",
+        "description": "Start of the week",
+        "picture": "/public/static/images/cards-icons/calendar.png",
+        "background": "yellow"
+    },
+    {
+        "id": 5,
+        "title": "Lorum ipsum",
+        "description": "Most popular product",
+        "picture": "/public/static/images/cards-icons/package.png",
+        "background": "gray"
+    },
+    {
+        "id": 6,
+        "title": "Evening",
+        "description": "Start of the day",
+        "picture": "/public/static/images/cards-icons/sun.png",
+        "background": "blue"
+    }
+]

@@ -1,0 +1,19 @@
+{
+  "short_name": "Shop My Influence Challenge",
+  "name": "Shop My Influence Challenge",
+  "icons": [{
+      "src": "https://uploads-ssl.webflow.com/6213d5592c456c13eabf8e04/628e2a77ce071c5e7daf1655_Favicon1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://uploads-ssl.webflow.com/6213d5592c456c13eabf8e04/628e2a77ce071c5e7daf1655_Favicon1.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
