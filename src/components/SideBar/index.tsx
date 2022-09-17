@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import { Box } from '@material-ui/core';
-
 import {
   SideBarContainer,
+  SideBarItems,
   SideBarSingleItem,
   SideBarLogo,
   SideBarIcon,
@@ -26,32 +25,36 @@ function SideBar() {
   const [showSidebar, setShowSidebar] = useState(true);
   const [activeIcon, setActiveIcon] = useState('home.png');
 
+  const handleSidebar = (state: boolean) => {
+    setShowSidebar(state);
+  };
+
   return (
     <>
-      <SideBarContainer show={showSidebar}>
+      <SideBarContainer showSidebar={showSidebar}>
         <SideBarLogo
           src="/static/images/logo-smi-insights.png"
-          onClick={() => setShowSidebar(false)}
+          onClick={() => handleSidebar(false)}
         />
-        <Box mt={6}>
-          {ALL_SIDEBAR_ICONS.map((img) => (
+        <SideBarItems>
+          {ALL_SIDEBAR_ICONS.map((image) => (
             <SideBarSingleItem
-              key={img}
-              onClick={() => setActiveIcon(img)}
-              active={activeIcon === img}
+              key={image}
+              onClick={() => setActiveIcon(image)}
+              active={activeIcon === image}
             >
               <SideBarIcon
-                src={`/static/images/slide-menu-icons/${img}`}
-                active={activeIcon === img}
-                img={img}
+                src={`/static/images/slide-menu-icons/${image}`}
+                active={activeIcon === image}
+                image={image}
               />
             </SideBarSingleItem>
           ))}
-        </Box>
+        </SideBarItems>
       </SideBarContainer>
       <OpenSideBarLogo
         src="/static/images/logo-smi-insights.png"
-        onClick={() => setShowSidebar(true)}
+        onClick={() => handleSidebar(true)}
       />
     </>
   );
