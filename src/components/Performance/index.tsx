@@ -20,7 +20,7 @@ function Performance() {
     <PerformanceContainer>
       <PerformanceCards>
         <SingleSection>
-          {data.slice(3).map((performance: PerformanceType) => (
+          {data.slice(0, 2).map((performance: PerformanceType) => (
             <SingleCard key={performance.id}>
               <CardImageContainer background={performance.background}>
                 <img src={performance.picture} alt={performance.picture} />
