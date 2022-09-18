@@ -2,15 +2,11 @@ import { useSelector } from 'react-redux';
 
 import { Box } from '@material-ui/core';
 
+import SingleInsight from './SingleInsight';
+
 import { InsightType } from '../../../interfaces';
 
-import {
-  LeftsideContainer,
-  InsightImageContainer,
-  InsightImage,
-  InsightTitle,
-  InsightDescription,
-} from './styles';
+import { LeftsideContainer } from './styles';
 
 function Leftside() {
   const { data } = useSelector((state: any) => state.insightsReducer);
@@ -19,20 +15,13 @@ function Leftside() {
     return (
       <Box mr={6}>
         {data.slice(section1, section2).map((insight: InsightType) => (
-          <Box
-            key={insight.id}
-            display="flex"
-            alignItems="center"
-            mb={insight.id !== 6 && insight.id !== 3 && 4}
-          >
-            <InsightImageContainer background={insight.background}>
-              <InsightImage src={insight.picture} alt={insight.picture} />
-            </InsightImageContainer>
-            <Box>
-              <InsightTitle>{insight.title}</InsightTitle>
-              <InsightDescription>{insight.description}</InsightDescription>
-            </Box>
-          </Box>
+          <SingleInsight
+            id={insight.id}
+            title={insight.title}
+            description={insight.description}
+            background={insight.background}
+            picture={insight.picture}
+          />
         ))}
       </Box>
     );

@@ -1,15 +1,14 @@
 import { useSelector } from 'react-redux';
 
+import SingleCardPerformance from './SingleCardPerformance';
+
 import { PerformanceType } from '../../interfaces';
+
 import { ConversionRateCard, SingleSection } from './styles';
 
 import {
   PerformanceContainer,
   PerformanceCards,
-  SingleCard,
-  CardImageContainer,
-  CardPrice,
-  CardTitle,
   CoversionRateImage,
 } from './styles';
 
@@ -21,24 +20,24 @@ function Performance() {
       <PerformanceCards>
         <SingleSection>
           {data.slice(0, 2).map((performance: PerformanceType) => (
-            <SingleCard key={performance.id}>
-              <CardImageContainer background={performance.background}>
-                <img src={performance.picture} alt={performance.picture} />
-              </CardImageContainer>
-              <CardPrice>{performance.price}</CardPrice>
-              <CardTitle>{performance.title}</CardTitle>
-            </SingleCard>
+            <SingleCardPerformance
+              id={performance.id}
+              background={performance.background}
+              picture={performance.picture}
+              price={performance.price}
+              title={performance.title}
+            />
           ))}
         </SingleSection>
         <SingleSection>
           {data.slice(2).map((performance: PerformanceType) => (
-            <SingleCard key={performance.id}>
-              <CardImageContainer background={performance.background}>
-                <img src={performance.picture} alt={performance.picture} />
-              </CardImageContainer>
-              <CardPrice>{performance.price}</CardPrice>
-              <CardTitle>{performance.title}</CardTitle>
-            </SingleCard>
+            <SingleCardPerformance
+              id={performance.id}
+              background={performance.background}
+              picture={performance.picture}
+              price={performance.price}
+              title={performance.title}
+            />
           ))}
         </SingleSection>
       </PerformanceCards>

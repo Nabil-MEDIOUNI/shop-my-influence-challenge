@@ -37,7 +37,7 @@ function Topbar({ showSidebar, handleSidebar }: TopbarPropsType) {
 
   return (
     <>
-      <TopbarContainer>
+      <TopbarContainer title="topbar">
         <OpenSideBarLogo
           src="/static/images/logo-smi-insights.png"
           alt="logo"
