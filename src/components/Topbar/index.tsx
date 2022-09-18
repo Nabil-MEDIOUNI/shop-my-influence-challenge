@@ -18,9 +18,15 @@ import {
   AllPeriodButton,
   CalendarImage,
   AllPeriodTypography,
+  OpenSideBarLogo,
 } from './styles';
 
-function Topbar() {
+type TopbarPropsType = {
+  showSidebar: boolean;
+  handleSidebar: (showSidebar: boolean) => void;
+};
+
+function Topbar({ showSidebar, handleSidebar }: TopbarPropsType) {
   const dispatch: any = useDispatch();
 
   const { data } = useSelector((state: any) => state.userReducer);
@@ -32,11 +38,19 @@ function Topbar() {
   return (
     <>
       <TopbarContainer>
-        <Box>
-          <Username>{`${data.first_name} ${data.last_name}`}</Username>
-          <ProfileLink>Profile</ProfileLink>
+        <OpenSideBarLogo
+          src="/static/images/logo-smi-insights.png"
+          alt="logo"
+          onClick={() => handleSidebar(true)}
+          showSidebar={showSidebar}
+        />
+        <Box display="flex" alignItems="center">
+          <Box>
+            <Username>{`${data.first_name} ${data.last_name}`}</Username>
+            <ProfileLink>Profile</ProfileLink>
+          </Box>
+          <ProfileImage src={data.picture} alt={data.first_name} />
         </Box>
-        <ProfileImage src={data.picture} alt={data.first_name} />
       </TopbarContainer>
       <SummaryContainer>
         <SummaryTitle>Summary dashboard: Drope facts</SummaryTitle>

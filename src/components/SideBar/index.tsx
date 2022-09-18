@@ -6,10 +6,14 @@ import {
   SideBarSingleItem,
   SideBarLogo,
   SideBarIcon,
-  OpenSideBarLogo,
 } from './styles';
 
-function SideBar() {
+type SideBarPropsType = {
+  showSidebar: boolean;
+  handleSidebar: (showSidebar: boolean) => void;
+};
+
+function SideBar({ showSidebar, handleSidebar }: SideBarPropsType) {
   const ALL_SIDEBAR_ICONS = [
     'home.png',
     'calendar.png',
@@ -22,44 +26,32 @@ function SideBar() {
     'archive.png',
   ];
 
-  const [showSidebar, setShowSidebar] = useState(true);
   const [activeIcon, setActiveIcon] = useState('home.png');
 
-  const handleSidebar = (state: boolean) => {
-    setShowSidebar(state);
-  };
-
   return (
-    <>
-      <SideBarContainer showSidebar={showSidebar}>
-        <SideBarLogo
-          src="/static/images/logo-smi-insights.png"
-          onClick={() => handleSidebar(false)}
-          alt="logo"
-        />
-        <SideBarItems>
-          {ALL_SIDEBAR_ICONS.map((image) => (
-            <SideBarSingleItem
-              key={image}
-              onClick={() => setActiveIcon(image)}
-              active={activeIcon === image}
-            >
-              <SideBarIcon
-                src={`/static/images/slide-menu-icons/${image}`}
-                active={activeIcon === image}
-                image={image}
-                alt="menu"
-              />
-            </SideBarSingleItem>
-          ))}
-        </SideBarItems>
-      </SideBarContainer>
-      <OpenSideBarLogo
+    <SideBarContainer showSidebar={showSidebar}>
+      <SideBarLogo
         src="/static/images/logo-smi-insights.png"
-        onClick={() => handleSidebar(true)}
+        onClick={() => handleSidebar(false)}
         alt="logo"
       />
-    </>
+      <SideBarItems>
+        {ALL_SIDEBAR_ICONS.map((image) => (
+          <SideBarSingleItem
+            key={image}
+            onClick={() => setActiveIcon(image)}
+            active={activeIcon === image}
+          >
+            <SideBarIcon
+              src={`/static/images/slide-menu-icons/${image}`}
+              active={activeIcon === image}
+              image={image}
+              alt="menu"
+            />
+          </SideBarSingleItem>
+        ))}
+      </SideBarItems>
+    </SideBarContainer>
   );
 }
 

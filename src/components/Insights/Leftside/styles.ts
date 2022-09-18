@@ -15,6 +15,9 @@ export const LeftsideContainer = styled.div`
     flex-direction: column;
     padding: 24px 0;
     width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
   }
   @media (max-width: 640px) {
   }
@@ -55,6 +58,7 @@ export const InsightTitle = styled.p`
 export const InsightDescription = styled.p`
   font-size: 12px;
   color: #032958;
+  white-space: nowrap;
   @media (max-width: 920px) {
   }
   @media (max-width: 640px) {

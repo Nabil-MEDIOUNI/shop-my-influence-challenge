@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
   box-shadow: 0px 0px 10px #d8d8d8;
   width: fit-content;
   margin-left: 34px;
-  width: 280px;
+  width: 100%;
   @media (max-width: 1080px) {
     margin: 0;
     margin-top: 24px;
@@ -29,6 +29,7 @@ export const CardContainer = styled.div`
 `;
 
 export const InstagramContainer = styled.div`
+  position: relative;
   background-color: #f6b4b5;
   border-radius: 4px;
   display: flex;
@@ -38,6 +39,7 @@ export const InstagramContainer = styled.div`
   height: 40%;
   @media (max-width: 1080px) {
     padding: 20px;
+    height: 150px;
   }
   @media (max-width: 920px) {
   }
@@ -75,6 +77,16 @@ export const CardContent = styled.div`
 export const CardTitle = styled.p`
   color: #032958;
   margin: 8px 0;
+  @media (max-width: 920px) {
+  }
+  @media (max-width: 640px) {
+  }
+`;
+
+export const CardImage = styled.img`
+  position: absolute;
+  bottom: 0;
+  width: 150px;
   @media (max-width: 920px) {
   }
   @media (max-width: 640px) {

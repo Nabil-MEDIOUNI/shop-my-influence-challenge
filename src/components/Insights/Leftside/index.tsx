@@ -1,9 +1,6 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { Box } from '@material-ui/core';
-
-import { getInsights } from '../../../redux/actions/insights';
 
 import { InsightType } from '../../../interfaces';
 
@@ -16,13 +13,7 @@ import {
 } from './styles';
 
 function Leftside() {
-  const dispatch: any = useDispatch();
-
   const { data } = useSelector((state: any) => state.insightsReducer);
-
-  useEffect(() => {
-    dispatch(getInsights());
-  }, [dispatch]);
 
   function ContainerContent(section: number) {
     return (

@@ -5,8 +5,8 @@ export const TopbarContainer = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: end;
-  padding: 12px 0;
+  justify-content: space-between;
+  padding: 4px 0;
   @media (max-width: 920px) {
   }
 `;
@@ -127,6 +127,13 @@ export const CalendarImage = styled.img`
 export const AllPeriodTypography = styled.p`
   margin: 0;
   margin-left: 8px;
+  @media (max-width: 920px) {
+  }
+`;
+
+export const OpenSideBarLogo = styled.img<{ showSidebar: boolean }>`
+  cursor: pointer;
+  opacity: ${(props) => (props.showSidebar ? '0' : '1')};
   @media (max-width: 920px) {
   }
 `;

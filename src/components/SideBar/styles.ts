@@ -60,13 +60,6 @@ export const SideBarLogo = styled.img`
   }
 `;
 
-export const OpenSideBarLogo = styled.img`
-  margin-top: 24px;
-  cursor: pointer;
-  @media (max-width: 920px) {
-  }
-`;
-
 export const SideBarIcon = styled.img<{ active: boolean; image: string }>`
   filter: ${(props) =>
     !props.active && props.image === 'home.png'

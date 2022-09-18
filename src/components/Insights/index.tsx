@@ -6,6 +6,7 @@ import {
   InstagramContainer,
   InstagramImageContainer,
   CardContent,
+  CardImage,
   CardTitle,
   CardDescription,
 } from './styles';
@@ -30,7 +31,7 @@ function Insights() {
       </CardContainer>
       <CardContainer>
         <InstagramContainer>
-          <img src="/static/images/avatars/Image.png" alt="instagram" />
+          <CardImage src="/static/images/avatars/Image.png" alt="instagram" />
         </InstagramContainer>
         <CardContent>
           <CardTitle>Idee2look</CardTitle>
