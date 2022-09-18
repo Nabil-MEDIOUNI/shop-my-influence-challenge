@@ -13,6 +13,28 @@ export const LeftSideContainer = styled.div`
   }
 `;
 
+export const ChartContainer = styled.div`
+  background-color: white;
+  box-shadow: 0px 0px 10px #d8d8d8;
+  border-radius: 4px;
+  padding: 24px;
+  width: auto;
+  margin-bottom: 34px;
+  display: flex;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: auto;
+  }
+`;
+
+export const SingleChartContainer = styled.div`
+  width: 100%;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: auto;
+  }
+`;
+
 export const RightSideContainer = styled.div`
   background-color: white;
   box-shadow: 0px 0px 10px #d8d8d8;

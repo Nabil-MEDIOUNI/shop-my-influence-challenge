@@ -1,86 +1,50 @@
-import { Component } from 'react';
-import Chart from 'chart.js';
+import React from 'react';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  LinearScale,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+import faker from 'faker';
 
-import './index.css';
-class BidHistory extends Component {
-  chart: any;
-  constructor(props: any) {
-    super(props);
-    this.state = {};
-  }
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+);
 
-  componentDidMount() {
-    this.createChart();
-  }
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top' as const,
+    },
+    title: {
+      display: false,
+    },
+  },
+};
 
-  createChart() {
-    const labels = ['Ios', 'Andr', 'Vide', 'Win', 'Mac'];
-    const canvas: any = this.refs.lineChart;
+const labels = ['Ios', 'Andr', 'Vide', 'Win', 'Mac'];
 
-    const data = {
-      labels,
-      datasets: [
-        {
-          backgroundColor: 'rgb(145, 220, 90)',
-          borderColor: '#8ac360',
-          data: [0, 10, 5, 2, 20, 30, 45],
-          pointRadius: 2,
-        },
-      ],
-    };
-    const config: any = {
-      type: 'bar',
-      data,
-      options: {
-        responsive: true,
-        layout: {
-          padding: {},
-          margin: {},
-        },
-        legend: {
-          display: false,
-        },
-        scales: {
-          xAxes: [
-            {
-              gridLines: {
-                display: false,
-              },
-              ticks: {
-                display: false,
-              },
-            },
-          ],
-          yAxes: [
-            {
-              gridLines: {
-                display: false,
-              },
-              ticks: {
-                display: false,
-              },
-            },
-          ],
-        },
-        tooltips: {
-          enabled: true,
-          backgroundColor: '#000000c4',
-          bodyAlign: 'center',
-          displayColors: false,
-        },
-      },
-    };
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'Dataset 2',
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      backgroundColor: '#FF5F5F',
+    },
+  ],
+};
 
-    this.chart = new Chart(canvas, config);
-  }
-
-  render() {
-    return (
-      <div className="bid-history-chart">
-        <canvas ref="lineChart" />
-      </div>
-    );
-  }
+export function BarChartMetric() {
+  return <Bar options={options} data={data} />;
 }
-
-export default BidHistory;

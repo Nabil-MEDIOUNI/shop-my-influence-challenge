@@ -15,10 +15,10 @@ import {
 function Leftside() {
   const { data } = useSelector((state: any) => state.insightsReducer);
 
-  function ContainerContent(section: number) {
+  function ContainerContent(section1: number, section2: number) {
     return (
       <Box mr={6}>
-        {data.splice(section).map((insight: InsightType) => (
+        {data.slice(section1, section2).map((insight: InsightType) => (
           <Box
             key={insight.id}
             display="flex"
@@ -40,8 +40,8 @@ function Leftside() {
 
   return (
     <LeftsideContainer>
-      {ContainerContent(3)}
-      {ContainerContent(-3)}
+      {ContainerContent(0, 3)}
+      {ContainerContent(3, 6)}
     </LeftsideContainer>
   );
 }
