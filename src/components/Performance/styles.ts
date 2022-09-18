@@ -52,6 +52,7 @@ export const ConversionRateCard = styled.div`
   align-items: center;
   justify-content: center;
   padding: 24px 0;
+  margin-bottom: 8px;
   @media (max-width: 920px) {
   }
 `;

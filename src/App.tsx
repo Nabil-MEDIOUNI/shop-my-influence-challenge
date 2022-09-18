@@ -8,6 +8,7 @@ import Topbar from './components/Topbar';
 import SectionDivider from './components/Shared/SectionDivider';
 import Performance from './components/Performance';
 import Insights from './components/Insights/index';
+import Sales from './components/Sales';
 
 import { getPerformances } from './redux/actions/performance';
 import { getInsights } from './redux/actions/insights';
@@ -40,6 +41,7 @@ function App() {
         <SectionDivider title="Main insights" />
         <Insights />
         <SectionDivider title="In-Depth Analysts" />
+        <Sales />
       </PageContainer>
     </Box>
   );
