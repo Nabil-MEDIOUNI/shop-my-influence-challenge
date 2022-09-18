@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "yarn && react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && firebase deploy",
     "test": "react-scripts test",
     "format:check": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
