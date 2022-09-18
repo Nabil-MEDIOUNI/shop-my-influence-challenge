@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
 
-import insightsReducer from './insights';
 import userReducer from './user';
+import performanceReducer from './performance';
+import insightsReducer from './insights';
 import salesReducer from './sales';
 
 const rootReducer = combineReducers({
-  insightsReducer,
   userReducer,
+  performanceReducer,
+  insightsReducer,
   salesReducer,
 });
 

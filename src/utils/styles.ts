@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const PageContainer = styled.div<{ showSidebar: boolean }>`
+  transition: 0.5s ease-in-out;
   position: ${(props) => (props.showSidebar ? 'absolute' : 'relative')};
   top: 25px;
   left: ${(props) => (props.showSidebar ? '120px' : '0')};

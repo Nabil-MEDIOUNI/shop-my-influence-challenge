@@ -13,3 +13,11 @@ export type SaleType = {
   picture: string;
   color: string;
 };
+
+export type PerformanceType = {
+  id: number;
+  title: string;
+  price: string;
+  picture: string;
+  background: string;
+};
