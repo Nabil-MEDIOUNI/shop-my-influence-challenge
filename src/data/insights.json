@@ -1,43 +1,44 @@
-[{
-        "id": 1,
-        "title": "Mobile",
-        "description": "Most used device",
-        "picture": "/static/images/cards-icons/smartphone.png",
-        "background": "#FFEDED"
-    },
-    {
-        "id": 2,
-        "title": "Black",
-        "description": "Most popular color",
-        "picture": "/static/images/cards-icons/target.png",
-        "background": "#FFEDED"
-    },
-    {
-        "id": 3,
-        "title": "Baskets",
-        "description": "Most popular subcat..",
-        "picture": "/static/images/cards-icons/award.png",
-        "background": "#EAF5ED"
-    },
-    {
-        "id": 4,
-        "title": "Monday",
-        "description": "Start of the week",
-        "picture": "/static/images/cards-icons/calendar.png",
-        "background": "#FDF4E5"
-    },
-    {
-        "id": 5,
-        "title": "Lorum ipsum",
-        "description": "Most popular product",
-        "picture": "/static/images/cards-icons/package.png",
-        "background": "#E2E5EC"
-    },
-    {
-        "id": 6,
-        "title": "Evening",
-        "description": "Start of the day",
-        "picture": "/static/images/cards-icons/sun.png",
-        "background": "#E5ECF6"
-    }
+[
+  {
+    "id": 1,
+    "title": "Mobile",
+    "description": "Most used device",
+    "picture": "/static/images/cards-icons/smartphone.png",
+    "background": "#FFEDED"
+  },
+  {
+    "id": 2,
+    "title": "Black",
+    "description": "Most popular color",
+    "picture": "/static/images/cards-icons/target.png",
+    "background": "#FFEDED"
+  },
+  {
+    "id": 3,
+    "title": "Baskets",
+    "description": "Most popular subcat..",
+    "picture": "/static/images/cards-icons/award.png",
+    "background": "#EAF5ED"
+  },
+  {
+    "id": 4,
+    "title": "Monday",
+    "description": "Start of the week",
+    "picture": "/static/images/cards-icons/calendar.png",
+    "background": "#FDF4E5"
+  },
+  {
+    "id": 5,
+    "title": "Lorum ipsum",
+    "description": "Most popular product",
+    "picture": "/static/images/cards-icons/package.png",
+    "background": "#E2E5EC"
+  },
+  {
+    "id": 6,
+    "title": "Evening",
+    "description": "Start of the day",
+    "picture": "/static/images/cards-icons/sun.png",
+    "background": "#E5ECF6"
+  }
 ]

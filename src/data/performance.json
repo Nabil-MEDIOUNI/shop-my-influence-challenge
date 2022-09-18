@@ -1,36 +1,37 @@
-[{
-        "id": 1,
-        "title": "Sales",
-        "price": "1M €",
-        "picture": "/static/images/cards-icons/shopping-bag.png",
-        "background": "#FFEDED"
-    },
-    {
-        "id": 2,
-        "title": "Transactions",
-        "price": "31K",
-        "picture": "/static/images/cards-icons/credit-card.png",
-        "background": "#E2E5EC"
-    },
-    {
-        "id": 3,
-        "title": "Panier moyen",
-        "price": "43€",
-        "picture": "/static/images/cards-icons/shopping-bag.png",
-        "background": "#FDF4E5"
-    },
-    {
-        "id": 4,
-        "title": "Number of shares",
-        "price": "689",
-        "picture": "/static/images/cards-icons/share-2.png",
-        "background": "#EAF5ED"
-    },
-    {
-        "id": 5,
-        "title": "Number of clicks",
-        "price": "31K",
-        "picture": "/static/images/cards-icons/navigation.png",
-        "background": "#FFEDED"
-    }
+[
+  {
+    "id": 1,
+    "title": "Sales",
+    "price": "1M €",
+    "picture": "/static/images/cards-icons/shopping-bag.png",
+    "background": "#FFEDED"
+  },
+  {
+    "id": 2,
+    "title": "Transactions",
+    "price": "31K",
+    "picture": "/static/images/cards-icons/credit-card.png",
+    "background": "#E2E5EC"
+  },
+  {
+    "id": 3,
+    "title": "Panier moyen",
+    "price": "43€",
+    "picture": "/static/images/cards-icons/shopping-bag.png",
+    "background": "#FDF4E5"
+  },
+  {
+    "id": 4,
+    "title": "Number of shares",
+    "price": "689",
+    "picture": "/static/images/cards-icons/share-2.png",
+    "background": "#EAF5ED"
+  },
+  {
+    "id": 5,
+    "title": "Number of clicks",
+    "price": "31K",
+    "picture": "/static/images/cards-icons/navigation.png",
+    "background": "#FFEDED"
+  }
 ]
