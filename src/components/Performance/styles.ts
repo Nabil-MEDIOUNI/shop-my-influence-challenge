@@ -34,7 +34,8 @@ export const SingleCard = styled.div`
   align-items: center;
   justify-content: center;
   padding: 24px 0;
-  margin: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
   @media (max-width: 920px) {
     margin: 0px;
     margin-bottom: 8px;
